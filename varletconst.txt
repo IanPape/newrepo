@@ -1,0 +1,15 @@
+Ian Pape 
+
+## **Quiz**
+
+1. What is the difference between ***var*** and ***let***?
+	= var was established first, var is function scoped, let is block scoped.
+
+2. What is the difference between **var** and ***const***?
+	=var and be reassigned in the block scope, const cannot.
+
+3.What is the difference between **let** and **const**?
+	= let can be reassigned, const cannot.
+
+4. What is hoisting?
+	= its when variable and function declarations are moved to the top of their scope during the compilation phase.
