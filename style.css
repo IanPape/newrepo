@@ -1,0 +1,80 @@
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.gif {
+  display: block;
+  margin-bottom: 20px; 
+  width: 200px;
+  height:250px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0; 
+  padding: 0; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, red, yellow) no-repeat center center fixed; /* Set the background gradient */
+  background-size: cover; 
+}
+
+input {
+  background-image: linear-gradient(to left, rgba(255, 255, 0, 0.5), rgba(255, 0, 0, 0.36));
+  border: none; 
+  width: 100%; 
+  padding: 10px; 
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; 
+}
+
+.suggestions {
+  width: 100%; 
+}
+
+ul {
+  list-style: none; 
+  padding: 0;
+}
+
+ul li {
+  font-weight: normal;
+}
+
+.suggestions ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0; 
+  box-shadow: none; 
+}
+
+.suggestions ul li:hover {
+  font-weight: bold;
+  
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#fruitDropdown {
+  display: none;
+  width: 0px;
+  height: 0px;
+  background: linear-gradient(to right, red, yellow); /* Gradient from red to yellow */
+  color: white;
+}
