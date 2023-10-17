@@ -19,7 +19,7 @@ function searchHandler(event) {
       document.getElementById('fruitDropdown').style.display = 'none';
     }
   }
-  
+ 
   
   function useSuggestion(event) {
     if (event.target.tagName === 'LI') {
@@ -32,17 +32,24 @@ function searchHandler(event) {
 
   function showSuggestions(results, inputVal) {
     const suggestionsList = document.querySelector('.suggestions ul');
-  
+
     suggestionsList.innerHTML = '';
+
+    if (inputVal.length === 0) {
+      suggestionsList.style.display = 'none';
+      return; 
+    }
   
-    for (let i = 0; i < Math.min(results.length, 5); i++) {
+    for (let i = 0; i < Math.min(results.length); i++) {
       const li = document.createElement('li');
       li.textContent = results[i];
       suggestionsList.appendChild(li);
     }
-  }
   
 
+    suggestionsList.style.display = 'block';
+  }
+  
 
 input.addEventListener('keyup', searchHandler);
 suggestions.addEventListener('click', useSuggestion);
