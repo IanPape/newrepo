@@ -1,0 +1,56 @@
+## **Part One: Solidify Terminology**
+
+In your own terms, define the following terms:
+
+- What is HTTP?
+
+    It stands for hyper-text transfer protocol, and it is the protocol that allows computers to communicate with eachother over the internet.  
+    It's like a language that web browsers use to request a recieve webpages, video etc from web servers.
+
+- What is a URL?
+
+    URLs ( or unfirom resource locatars) are addresses that enables you find an access
+    specific content on the world wide web.
+
+- What is DNS?
+
+    A doman name system is like a phonebook for the web.  It translates human readable domain names
+    into numeral IP addresses.
+
+- What is a query string?
+
+    A query string is like a little note you attach to a url that tells the website what specifally you are searching for.
+
+- What are two HTTP verbs and how are they different?
+
+    Get and Post.  Get is used to request data from a server without making and changes or 
+    updates to the servers data.  Post is used to send data to a web server to create or update something.
+
+- What is an HTTP request?
+
+    an HTTP request is like a client's way of asking a web server for specific information or action
+    and it's a key part of how data and services are exchanged on the internet.
+
+- What is an HTTP response?
+
+    It's a response sent by a web server to the HTTP request, it contains vital info regarding the specific request.
+- 
+    HTTP headers are pieces of information included in the request and response messages 
+    exchanged between a client (such as a web browser) and a web server.   
+    User-Agent: Mozilla/5.0
+    Accept: text/html,
+
+- What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser? 
+
+    1. The browser sends an HTTP request to the server at "site.com," asking for the web page "page.html."
+
+    2. The request includes the server name and the specific page you want.
+
+    3. The server receives the request, finds the requested page, and generates an HTTP response.
+
+    4. The server sends the response, including the "page.html" content, back to your browser.
+
+    5. Your browser receives the response and displays the web page on your screen for you to view and interact with.
+
+
+
