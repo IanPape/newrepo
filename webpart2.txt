@@ -1,0 +1,38 @@
+## ****Part Two: Practice Tools****
+
+1. Using ***curl***, make a ***GET*** request to the *icanhazdadjoke.com* API to find all jokes involving the word “pirate”
+
+    ian@DESKTOP-1P5IIVG:~/springboard$ curl "https://icanhazdadjoke.com/search?term=pirate"
+    What does a pirate pay for his corn? A buccaneer!
+    What did the pirate say on his 80th birthday? Aye Matey!
+    Why couldn't the kid see the pirate movie? Because it was rated arrr!
+    Why are pirates called pirates? Because they arrr!
+    Why do pirates not know the alphabet? They always get stuck at "C".ian@DESKTOP-1P5IIVG:~/springboard$
+
+2. Use ***dig*** to find what the IP address is for *icanhazdadjoke.com*
+
+/springboard$ dig icanhazdadjoke.com
+
+    ; <<>> DiG 9.18.12-0ubuntu0.22.04.1-Ubuntu <<>> icanhazdadjoke.com
+    ;; global options: +cmd
+    ;; Got answer:
+    ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 11252
+    ;; flags: qr rd ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+    ;; WARNING: recursion requested but not available
+
+    ;; QUESTION SECTION:
+    ;icanhazdadjoke.com.            IN      A
+
+    ;; ANSWER SECTION:
+    icanhazdadjoke.com.     0       IN      A       104.21.66.15
+    icanhazdadjoke.com.     0       IN      A       172.67.198.173
+
+    ;; Query time: 20 msec
+    ;; SERVER: 172.29.224.1#53(172.29.224.1) (UDP)
+    ;; WHEN: Mon Oct 23 21:20:27 EDT 2023
+    ;; MSG SIZE  rcvd: 86
+
+
+3. Make a simple web page and serve it using ***python3 -m http.server***. Visit the page in a browser.
+
+    Made a simple web page and visited the page in the browser via the built in vscode method.
